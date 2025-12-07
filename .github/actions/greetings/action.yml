@@ -30,6 +30,10 @@ runs:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
     - name: Adjust permissions goodbye.sh
+      run: ls -lha
+      shell: bash
+
+    - name: Adjust permissions goodbye.sh
       run: chmod +x goodbye.sh
       shell: bash
 
