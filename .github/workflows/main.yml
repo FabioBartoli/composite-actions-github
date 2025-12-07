@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - id: foo
-        uses: ./.github/actions/greetings/action.yml
+        uses: ./.github/actions/greetings
         with:
           who-to-greet: 'Fabio'
       - run: echo random-number "$RANDOM_NUMBER"
